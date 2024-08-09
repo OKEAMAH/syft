@@ -35,7 +35,7 @@ var imageOnlyTestCases = []testCase{
 		pkgType:     pkg.PythonPkg,
 		pkgLanguage: pkg.Python,
 		pkgInfo: map[string]string{
-			"Pygments":     "2.6.1",
+			"pygments":     "2.6.1",
 			"requests":     "2.22.0",
 			"somerequests": "3.22.0",
 			"someotherpkg": "3.19.0",
@@ -172,7 +172,7 @@ var dirOnlyTestCases = []testCase{
 			"passlib":            "1.7.2",
 			"mypy":               "v0.770",
 			// common to image and directory
-			"Pygments":     "2.6.1",
+			"pygments":     "2.6.1",
 			"requests":     "2.22.0",
 			"somerequests": "3.22.0",
 			"someotherpkg": "3.19.0",
@@ -386,6 +386,14 @@ var dirOnlyTestCases = []testCase{
 			"swift-atomics":          "1.1.0",
 			"swift-collections":      "1.0.4",
 			"swift-numerics":         "1.0.2",
+		},
+	},
+	{
+		name:        "find swipl pack package manager packages",
+		pkgType:     pkg.SwiplPackPkg,
+		pkgLanguage: pkg.Swipl,
+		pkgInfo: map[string]string{
+			"hdt": "0.5.2",
 		},
 	},
 	{

@@ -71,6 +71,13 @@ from-images:
     paths:
       - /usr/local/lib/erlang/erts-15.0/bin/beam.smp
 
+  - version: 9.3.8
+    images:
+      - ref: swipl:9.3.8@sha256:6a15e6a03afe943228924a5502ba763e653ff28d9b3391e2b3e1fc3e991f37d4
+        platform: linux/amd64
+    paths:
+      - /usr/lib/swipl/bin/x86_64-linux/swipl
+
   - version: 1.21.3
     images:
       - ref: golang:1.21.3@sha256:3ce8313c3513515040870c55e0c041a2b94f3576a58cfd3948633604214aa811
@@ -448,6 +455,12 @@ from-images:
     paths:
       - /usr/local/bin/traefik
 
+  - version: 3.0.4
+    images:
+      - ref: traefik:3.0.4@sha256:12a7cc4232b5b7fe027673da8c096144525f59a8eabc87e52260aac0ec5a1219
+        platform: linux/riscv64
+    paths:
+      - /usr/local/bin/traefik
 
   # from the original dynamic fixtures...
 
